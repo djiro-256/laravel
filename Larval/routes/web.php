@@ -15,6 +15,12 @@ Route::get('/', function () {
     return view('top');
 });
 
+//usersのルーティング
+Route::resource('users', 'UserController');
+//postsのルーティング
+Route::resource('posts', 'PostController');
+
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
