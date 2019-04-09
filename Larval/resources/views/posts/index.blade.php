@@ -29,5 +29,6 @@
             </tbody>
         </table>
     </div>
-</div>
+    {{ $posts->links() }}
+</div><!-- end container -->
 @endsection
