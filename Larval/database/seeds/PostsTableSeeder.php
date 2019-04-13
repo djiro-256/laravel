@@ -1,7 +1,5 @@
 <?php
-
 use Illuminate\Database\Seeder;
-
 class PostsTableSeeder extends Seeder
 {
     /**
@@ -13,7 +11,6 @@ class PostsTableSeeder extends Seeder
     {
         // Fakerを使う
         $faker = Faker\Factory::create('ja_JP');
-
         // ランダムに記事を作成
         for ($i = 0; $i < 40; $i++)
         {
@@ -22,6 +19,7 @@ class PostsTableSeeder extends Seeder
                 'body' => $faker->text(200),
                 'created_at' => $faker->dateTime(),
                 'updated_at' => $faker->dateTime(),
+                'user_id' => $faker->numberBetween(1, 20),
             ]);
         }
     }
