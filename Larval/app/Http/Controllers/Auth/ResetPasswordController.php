@@ -78,4 +78,18 @@ class ResetPasswordController extends Controller
                     ? $this->sendResetResponse($request, $response)
                     : $this->sendResetFailedResponse($request, $response);
     }
+
+    /**
+     * パスワード再設定が完了した場合の処理
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  string  $response
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Http\JsonResponse
+     */
+    protected function sendResetResponse(Request $request, $response)
+    {
+        // リダイレクト先でフラッシュメッセージを表示する
+        return redirect($this->redirectPath())
+                            ->with('my_status', trans($response));
+    }
 }
