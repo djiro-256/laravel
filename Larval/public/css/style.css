@@ -1,6 +1,7 @@
   body {
-    font-family: "Noto Sans Japanese","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック",Osaka,sans-serif;
+    font-family:'Press Start 2P', cursive, 美咲ゴシック!important;
   }
+
   
   .top-image {
     background-image: url("assets/game-top.jpeg");
@@ -19,4 +20,19 @@
     background: rgba(11,122,226,0.5);
     width: 100%;
     padding: 0;
+  }
+
+  .dot-font {
+    font-family: 'Press Start 2P', cursive;
+  }
+
+  .dot-ja {
+    font-family: 美咲ゴシック;
+  }
+
+  @font-face
+  {
+  font-family: 美咲ゴシック;
+  src: url('https://cdn.leafscape.be/misaki/misaki_gothic_web.woff2')
+       format("woff2");
   }
