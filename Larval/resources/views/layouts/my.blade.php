@@ -12,9 +12,11 @@
 
     {{-- CSS --}}
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 </head>
 <body>
-    <div id="app">
+    <div id="app" class="">
+
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
@@ -126,7 +128,7 @@
             </div>
         @endif
 
-        <main class="py-4">
+        <main class="">
             @yield('content')
         </main>
     </div>

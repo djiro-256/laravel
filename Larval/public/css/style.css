@@ -1,0 +1,22 @@
+  body {
+    font-family: "Noto Sans Japanese","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック",Osaka,sans-serif;
+  }
+  
+  .top-image {
+    background-image: url("assets/game-top.jpeg");
+  }
+
+ .jumbotron {
+    background-image: url("/assets/game-top.jpeg");
+    background-size: cover;
+    background-position: center 60%;
+    height: 100vh;
+    padding:0;
+  }
+
+  .bg-mask {
+    height: 100%;
+    background: rgba(11,122,226,0.5);
+    width: 100%;
+    padding: 0;
+  }
