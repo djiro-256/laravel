@@ -1,8 +1,11 @@
   body {
-    font-family:'Press Start 2P', cursive, 美咲ゴシック!important;
+    font-family:PixelMplus10 Regular!important;
   }
 
-  
+  main {
+    background-color: #F3F3F3;
+  }
+
   .top-image {
     background-image: url("assets/game-top.jpeg");
   }
@@ -11,13 +14,13 @@
     background-image: url("/assets/game-top.jpeg");
     background-size: cover;
     background-position: center 60%;
-    height: 100vh;
+    height: 80vh;
     padding:0;
   }
 
   .bg-mask {
     height: 100%;
-    background: rgba(11,122,226,0.5);
+    background: rgba(61, 61, 61, 0.9);
     width: 100%;
     padding: 0;
   }
@@ -35,4 +38,26 @@
   font-family: 美咲ゴシック;
   src: url('https://cdn.leafscape.be/misaki/misaki_gothic_web.woff2')
        format("woff2");
+  }
+
+  @font-face
+  {
+  font-family: PixelMplus10 Regular;
+  src: url('https://cdn.leafscape.be/PixelMplus/PixelMplus10-Regular_web.woff2')
+      format("woff2");
+  }
+
+  .nes-balloon {
+    padding: 0.5rem 1rem!important;
+  }
+
+  .nes-container.is-rounded{
+    padding: 0.5rem 1rem!important;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .p-sp {
+      font-size: 10px;
+      font-weight: bold;
+    }
   }

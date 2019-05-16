@@ -6,13 +6,46 @@
 @section('title', 'demo-laravel-crud')
 @section('content')
 
-<div class="container-fluid text-white jumbotron">
+<!--トップページのヘッダー画像の部分-->
+@include('contens.top_header')
 
-    <div class="bg-mask align-items-center">
-    <h1 class="dot-ja text-center pt-5 h3">全国のレトロゲームショップが見つかるサイト</h1>
-        <br>
-        <h1 class="nes-text dot-font text-white text-center display-5 w-100">Retro Game Map</h1>
-    </div>
+<!--メインコンテンツ-->
+<div class="container bg-white">
+  <h2 class="pt-3">
+    新着投稿
+    <span class="h6">
+      ショップやゲームセンターに行った記録を投稿しよう
+    </span>
+  </h2>
+  <div class="row">
+    <!-- PC表示のメインコンテンツ -->
+    <div class="col-md-9">
+      テスト
+      <br>
+      あああああ
+      テスト
+      <br>
+      あああああ
+      テスト
+      <br>
+      あああああ
+    </div><!-- PC表示のメインコンテンツ終了 -->
+    <!-- PC表示のサイドバー -->
+    <div class="col-md-3">
+    テスト
+      <br>
+      あああああ
+      テスト
+      <br>
+      あああああ
+      テスト
+      <br>
+      あああああ
+
+    </div><!-- PC表示のサイドバー終了 -->
+  </div>
+
 </div>
+
 
 @endsection

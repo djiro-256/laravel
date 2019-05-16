@@ -54,8 +54,8 @@
                     {{-- Navbarの右側 --}}
                     <ul class="navbar-nav ml-auto">
                         {{-- 投稿ボタン --}}
-                        <li class="nav-item">
-                            <a href="{{ url('posts/create') }}" id="new-post" class="btn btn-success">
+                        <li class="nav-item pr-2">
+                            <a href="{{ url('posts/create') }}" id="new-post" class="nes-btn is-success">
                                 {{ __('New Post') }}
                             </a>
                         </li>
@@ -82,7 +82,7 @@
                         @else
                             {{-- 「プロフィール」と「ログアウト」のドロップダウンメニュー --}}
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="dropdown-user" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle pt-3" href="#" id="dropdown-user" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-user">
@@ -101,7 +101,7 @@
                             </li>
                         @endguest
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="dropdown-lang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle pt-3" href="javascript:void(0)" id="dropdown-lang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 {{ __('locale.'.App::getLocale()) }}
                             </a>
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-lang">
