@@ -1,4 +1,4 @@
-<footer class="container-fluid px-0 mt-4 bg-white">
+<footer class="container-fluid px-0 bg-white">
   <div class="col-12 footer-bg text-white">
     <div class="container p-2 text-center">
       レトロゲームマップとは? | 関連リンク | ご意見箱 | お問い合わせ | 利用規約 | プライバシポリシー

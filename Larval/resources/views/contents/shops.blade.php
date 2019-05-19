@@ -60,6 +60,10 @@
           </div>
         </div>
       </div>
+      
     </div>
   </div><!-- end col-12 -->
+  <div class="col-12 text-center mt-3">
+  <button type="button" class="nes-btn is-error text-center">ショップ・施設一覧へ 〉</button>
+</div>
 </div><!-- end container -->

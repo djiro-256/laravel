@@ -60,6 +60,10 @@
     color: #E60012;
   }
 
+  .pref a {
+    font-size: 0.8rem;
+  }
+
   .icon-img {
       display: block;
       width: 80px;
