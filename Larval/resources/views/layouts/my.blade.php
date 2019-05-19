@@ -63,7 +63,7 @@
                         {{-- 認証関連のリンク --}}
                         @guest
                             {{-- 「ログイン」と「ユーザー登録」へのリンク --}}
-                            <li class="nav-item @if (my_is_current_controller('login', 'password')) active @endif">
+                            <li class="nav-item pt-2 @if (my_is_current_controller('login', 'password')) active @endif">
                                 <a class="nav-link" href="{{ route('login') }}">
                                     {{ __('Login') }}
                                     @if (my_is_current_controller('login', 'password'))
@@ -71,7 +71,7 @@
                                     @endif
                                 </a>
                             </li>
-                            <li class="nav-item @if (my_is_current_controller('register')) active @endif">
+                            <li class="nav-item pt-2 @if (my_is_current_controller('register')) active @endif">
                                 <a class="nav-link" href="{{ route('register') }}">
                                     {{ __('Register') }}
                                     @if (my_is_current_controller('register'))

@@ -1,15 +1,14 @@
+  /* サイト全体のフォントをPixelMplus10 Regularに指定*/
   body {
     font-family:PixelMplus10 Regular!important;
   }
 
+/*コンテンツ全体の背景の色*/
   main {
     background-color: #F3F3F3;
   }
 
-  .top-image {
-    background-image: url("assets/game-top.jpeg");
-  }
-
+  /*トップページのヘッダー画像*/
  .jumbotron {
     background-image: url("/assets/game-top.jpeg");
     background-size: cover;
@@ -18,6 +17,7 @@
     padding:0;
   }
 
+  /*トップページの画像を透過*/
   .bg-mask {
     height: 100%;
     background: rgba(61, 61, 61, 0.9);
@@ -25,6 +25,24 @@
     padding: 0;
   }
 
+  /*ショップの情報登録の部分の画像*/
+  .wanted {
+    background-image: url("/assets/game-top.jpeg");
+    background-size: cover;
+    background-position: center 60%;
+    height: 55vh;
+    padding:0;
+  }
+
+/*wantedコンテンツ部の画像を透過*/
+  .mask-wanted {
+    height: 100%;
+    background: rgba(32, 32, 32, 0.5);
+    width: 100%;
+    padding: 0;
+  }
+
+  /*
   .dot-font {
     font-family: 'Press Start 2P', cursive;
   }
@@ -32,6 +50,29 @@
   .dot-ja {
     font-family: 美咲ゴシック;
   }
+  */
+
+  .footer-bg {
+    background-color: #FACD00!important;
+  }
+
+  .text-red {
+    color: #E60012;
+  }
+
+  .icon-img {
+      display: block;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+  }
+
+  .shop-img {
+      width: 100%;
+      height: 185px;
+      object-fit: cover;
+  }
+
 
   @font-face
   {
@@ -55,9 +96,18 @@
     padding: 0.5rem 1rem!important;
   }
 
+  /*1024px以下にcssを変更する*/
   @media screen and (max-width: 1024px) {
     .p-sp {
       font-size: 10px;
       font-weight: bold;
     }
+
+    .icon-img {
+      display: block;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+
   }
